@@ -8,7 +8,11 @@
         "iad1"
     ],
     "functions": {
-        "apps/frontend/src/app/(app)/api/**/route.ts": {
+        "apps/frontend/src/app/(app)/api/health/route.ts": {
+            "maxDuration": 30,
+            "memory": 1024
+        },
+        "apps/frontend/src/app/(app)/api/uploads/[[...path]]/route.ts": {
             "maxDuration": 30,
             "memory": 1024
         }
